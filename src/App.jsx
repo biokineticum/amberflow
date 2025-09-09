@@ -175,7 +175,8 @@ const AmberFlowWebsite = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <button 
                   onClick={() => scrollToSection('contact')}
-                  className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors text-lg font-semibold"
+                  className="!bg-blue-600 !text-white px-8 py-3 rounded-lg hover:!bg-blue-700 transition-colors text-lg font-semibold"
+                  style={{ WebkitAppearance: 'none', appearance: 'none', WebkitTapHighlightColor: 'transparent' }}
                 >
                   Zapisz się na zajęcia
                 </button>
@@ -330,6 +331,7 @@ const AmberFlowWebsite = () => {
                 <button 
                   onClick={() => scrollToSection('contact')}
                   className="w-full !bg-blue-600 !text-white py-3 rounded-lg shadow-md hover:!bg-blue-700 hover:shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-600 disabled:!bg-slate-200 disabled:!text-slate-700 disabled:cursor-not-allowed"
+                  style={{ WebkitAppearance: 'none', appearance: 'none', WebkitTapHighlightColor: 'transparent' }}
                 >
                   Zapisz się
                 </button>
@@ -359,6 +361,7 @@ const AmberFlowWebsite = () => {
                 <button 
                   onClick={() => scrollToSection('contact')}
                   className="w-full !bg-green-600 !text-white py-3 rounded-lg shadow-md hover:!bg-green-700 hover:shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-green-600 disabled:!bg-slate-200 disabled:!text-slate-700 disabled:cursor-not-allowed"
+                  style={{ WebkitAppearance: 'none', appearance: 'none', WebkitTapHighlightColor: 'transparent' }}
                 >
                   Dołącz do grupy
                 </button>
@@ -388,6 +391,7 @@ const AmberFlowWebsite = () => {
                 <button 
                   onClick={() => scrollToSection('contact')}
                   className="w-full !bg-blue-600 !text-white py-3 rounded-lg shadow-md hover:!bg-blue-700 hover:shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-600 disabled:!bg-slate-200 disabled:!text-slate-700 disabled:cursor-not-allowed"
+                  style={{ WebkitAppearance: 'none', appearance: 'none', WebkitTapHighlightColor: 'transparent' }}
                 >
                   Rozpocznij naukę
                 </button>
@@ -403,6 +407,7 @@ const AmberFlowWebsite = () => {
             <button 
               onClick={() => scrollToSection('contact')}
               className="!bg-teal-600 !text-white px-8 py-3 rounded-lg shadow-md hover:!bg-teal-700 hover:shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-teal-600 disabled:!bg-slate-200 disabled:!text-slate-700 disabled:cursor-not-allowed"
+              style={{ WebkitAppearance: 'none', appearance: 'none', WebkitTapHighlightColor: 'transparent' }}
             >
               Umów warsztat
             </button>
@@ -593,7 +598,8 @@ const AmberFlowWebsite = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors text-lg font-semibold"
+                  className="w-full !bg-blue-600 !text-white py-3 px-6 rounded-lg hover:!bg-blue-700 transition-colors text-lg font-semibold"
+                  style={{ WebkitAppearance: 'none', appearance: 'none', WebkitTapHighlightColor: 'transparent' }}
                 >
                   Wyślij zgłoszenie
                 </button>
