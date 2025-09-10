@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Mail, Phone, MapPin, Facebook, Instagram, Menu, X, Palette, Users, Clock, Award } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Mail, Phone, MapPin, Facebook, Instagram, Menu, X, Palette, Users, Clock, Award, PenTool } from 'lucide-react';
 
 const AmberFlowWebsite = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -110,7 +110,7 @@ const AmberFlowWebsite = () => {
             {/* Navigation Desktop */}
             <nav className="hidden md:flex space-x-8">
               <button onClick={() => scrollToSection('home')} className="text-blue-600 font-medium">Strona główna</button>
-              <button onClick={() => scrollToSection('about')} className="text-blue-600 font-medium">O artystce</button>
+              <button onClick={() => scrollToSection('about')} className="text-blue-600 font-medium">O mnie</button>
               <button onClick={() => scrollToSection('courses')} className="text-blue-600 font-medium">Kursy</button>
               <button onClick={() => scrollToSection('gallery')} className="text-blue-600 font-medium">Galeria</button>
               <button onClick={() => scrollToSection('contact')} className="text-blue-600 font-medium">Kontakt</button>
@@ -138,7 +138,7 @@ const AmberFlowWebsite = () => {
             <div className="md:hidden pb-4">
               <div className="flex flex-col space-y-2">
                 <button onClick={() => scrollToSection('home')} className="text-left py-2 text-blue-600 font-medium">Strona główna</button>
-                <button onClick={() => scrollToSection('about')} className="text-left py-2 text-blue-600 font-medium">O artystce</button>
+                <button onClick={() => scrollToSection('about')} className="text-left py-2 text-blue-600 font-medium">O mnie</button>
                 <button onClick={() => scrollToSection('courses')} className="text-left py-2 text-blue-600 font-medium">Kursy</button>
                 <button onClick={() => scrollToSection('gallery')} className="text-left py-2 text-blue-600 font-medium">Galeria</button>
                 <button onClick={() => scrollToSection('contact')} className="text-left py-2 text-blue-600 font-medium">Kontakt</button>
@@ -167,8 +167,8 @@ const AmberFlowWebsite = () => {
                   tchnij sztukę w swoje życie!
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Zapraszamy do AmberFlow, pracowni Weroniki Ambrożkiewicz-Mosler w Jawiszowicach. 
-                  Rozwiń kreatywność w kameralnych grupach (tylko 4 osoby!) i odkryj magię malarstwa!
+                  Nazywam się Weronika Ambrożkiewicz-Mosler i zapraszam Cię do mojej pracowni AmberFlow w Jawiszowicach. 
+                  Razem odkryjemy magię malarstwa w kameralnych grupach - maksymalnie 4 osoby!
                 </p>
               </div>
 
@@ -236,18 +236,7 @@ const AmberFlowWebsite = () => {
                 <ChevronRight className="w-6 h-6" />
               </button>
 
-              {/* Dots */}
-              <div className="absolute bottom-4 right-4 flex space-x-2">
-                {artworks.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setCurrentSlide(index)}
-                    className={`w-3 h-3 rounded-full transition-colors ${
-                      index === currentSlide ? 'bg-blue-600' : 'bg-blue-400'
-                    }`}
-                  />
-                ))}
-              </div>
+
             </div>
           </div>
         </div>
@@ -259,26 +248,26 @@ const AmberFlowWebsite = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h2 className="text-3xl lg:text-4xl font-serif font-bold text-gray-900">
-                Poznaj <span className="text-blue-600">Weronikę</span>
+                Poznaj <span className="text-blue-600">mnie</span>
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Weronika Ambrożkiewicz-Mosler, znana jako Amber, to artystka wizualna urodzona w 1988 roku. 
-                  Specjalizuje się w abstrakcji, łącząc intensywne kolory i różnorodne techniki malarskie.
+                  Jestem Weronika Ambrożkiewicz-Mosler, znana również jako Amber. Urodziłam się w 1988 roku i jestem artystką wizualną. 
+                  Specjalizuję się w abstrakcji, łącząc intensywne kolory z różnorodnymi technikami malarskimi.
                 </p>
                 <p>
-                  Jej prace, inspirowane naturą i psychologią, powstają w pracowni AmberFlow. 
-                  Swoją pasją dzieli się z uczniami, prowadząc kursy dla wszystkich grup wiekowych.
+                  Moje prace, inspirowane naturą i psychologią, tworzę właśnie tutaj - w pracowni AmberFlow. 
+                  Swoją pasją do sztuki chętnie dzielę się z uczniami, prowadząc kursy dla wszystkich grup wiekowych.
                 </p>
                 <p>
-                  Unikalne połączenie wykształcenia naukowego (doktor chemii) z artystyczną wrażliwością 
-                  pozwala jej na precyzyjne podejście do technik malarskich i innowacyjne metody nauczania.
+                  Moje unikalne połączenie wykształcenia naukowego (jestem doktorem chemii) z artystyczną wrażliwością 
+                  pozwala mi na precyzyjne podejście do technik malarskich i opracowanie innowacyjnych metod nauczania.
                 </p>
               </div>
               <div className="bg-blue-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-gray-900 mb-2">Twórczość</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">Moja twórczość</h3>
                 <p className="text-gray-600">
-                  Swoje prace prezentuje na platformie <a href="https://www.artmajeur.com/weronika-ambrozkiewicz-mosler" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 underline">ArtMajeur</a>, gdzie można śledzić jej najnowsze projekty i rozwój artystyczny.
+                  Swoje prace prezentuję na platformie <a href="https://www.artmajeur.com/weronika-ambrozkiewicz-mosler" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 underline">ArtMajeur</a>, gdzie możesz śledzić moje najnowsze projekty i rozwój artystyczny.
                 </p>
               </div>
             </div>
@@ -305,67 +294,37 @@ const AmberFlowWebsite = () => {
               Oferta <span className="text-blue-600">Kursów</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Kameralne grupy (tylko 4 osoby!) zapewniają indywidualne podejście i komfort nauki
+              Prowadzę kameralne grupy - maksymalnie 4 osoby! To pozwala mi na indywidualne podejście do każdego ucznia
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Akwarele */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border-2 border-blue-200">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Rysunek */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border-2 border-gray-200">
               <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <Palette className="w-8 h-8 text-white" />
+                <div className="w-16 h-16 bg-gradient-to-br from-gray-600 to-gray-800 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <PenTool className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">Akwarele</h3>
+                <h3 className="text-2xl font-bold text-gray-900">Rysunek</h3>
                 <p className="text-gray-600">Wszystkie grupy wiekowe</p>
               </div>
               <div className="space-y-4 mb-8">
                 <ul className="space-y-2 text-gray-600">
-                  <li>• Podstawy techniki akwarelowej</li>
-                  <li>• Pejzaże i martwe natury</li>
-                  <li>• Gra światła i cienia</li>
+                  <li>• Ołówek, węgiel i sangwina</li>
+                  <li>• Studium światła i cienia</li>
+                  <li>• Nauka perspektywy</li>
                   <li>• Materiały wliczone w cenę</li>
                 </ul>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">120-150 zł</div>
+                <div className="text-3xl font-bold text-gray-600 mb-2">160-180 zł</div>
                 <p className="text-gray-600 mb-4">miesięcznie (4 zajęcia)</p>
                 <button 
                   onClick={() => scrollToSection('contact')}
-                  className="w-full !bg-blue-600 !text-white py-3 rounded-lg shadow-md hover:!bg-blue-700 hover:shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-600 disabled:!bg-slate-200 disabled:!text-slate-700 disabled:cursor-not-allowed"
+                  className="w-full !bg-gray-600 !text-white py-3 rounded-lg shadow-md hover:!bg-gray-700 hover:shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-600 disabled:!bg-slate-200 disabled:!text-slate-700 disabled:cursor-not-allowed"
                   style={{ WebkitAppearance: 'none', appearance: 'none', WebkitTapHighlightColor: 'transparent' }}
                 >
                   Zapisz się
-                </button>
-              </div>
-            </div>
-
-            {/* Akryl */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border-2 border-green-200">
-              <div className="text-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <Palette className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900">Akryl</h3>
-                <p className="text-gray-600">Wszystkie grupy wiekowe</p>
-              </div>
-              <div className="space-y-4 mb-8">
-                <ul className="space-y-2 text-gray-600">
-                  <li>• Techniki akrylowe</li>
-                  <li>• Portrety i abstrakcje</li>
-                  <li>• Mieszanie kolorów</li>
-                  <li>• Materiały wliczone w cenę</li>
-                </ul>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-600 mb-2">160-180 zł</div>
-                <p className="text-gray-600 mb-4">miesięcznie (4 zajęcia)</p>
-                <button 
-                  onClick={() => scrollToSection('contact')}
-                  className="w-full !bg-green-600 !text-white py-3 rounded-lg shadow-md hover:!bg-green-700 hover:shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-green-600 disabled:!bg-slate-200 disabled:!text-slate-700 disabled:cursor-not-allowed"
-                  style={{ WebkitAppearance: 'none', appearance: 'none', WebkitTapHighlightColor: 'transparent' }}
-                >
-                  Dołącz do grupy
                 </button>
               </div>
             </div>
@@ -404,7 +363,7 @@ const AmberFlowWebsite = () => {
           {/* Additional Info */}
           <div className="mt-12 text-center bg-white rounded-2xl p-8 shadow-lg">
             <h3 className="text-xl font-bold text-gray-900 mb-4">Warsztaty jednorazowe</h3>
-            <p className="text-gray-600 mb-4">Sprawdź czy malarstwo to Twoja pasja na warsztatach wprowadzających</p>
+            <p className="text-gray-600 mb-4">Sprawdź czy malarstwo to Twoja pasja na moich warsztatach wprowadzających</p>
             <div className="text-2xl font-bold text-teal-600 mb-4">50-70 zł/osobę</div>
             <button 
               onClick={() => scrollToSection('contact')}
@@ -475,7 +434,7 @@ const AmberFlowWebsite = () => {
           <div className="space-y-6">
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Czy potrzebuję doświadczenia w malarstwie?</h3>
-              <p className="text-gray-600">Nie musisz mieć żadnego doświadczenia! Nasze kursy są dostosowane do wszystkich poziomów zaawansowania. Zaczynamy od podstaw i stopniowo rozwijamy umiejętności.</p>
+              <p className="text-gray-600">Nie musisz mieć żadnego doświadczenia! Moje kursy są dostosowane do wszystkich poziomów zaawansowania. Zaczynamy od podstaw i stopniowo rozwijamy umiejętności.</p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 shadow-lg">
@@ -490,12 +449,12 @@ const AmberFlowWebsite = () => {
 
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Jak zapisać się na kurs?</h3>
-              <p className="text-gray-600">Wypełnij formularz kontaktowy poniżej lub zadzwoń bezpośrednio. Umówimy się na bezpłatne spotkanie zapoznawcze, podczas którego omówimy Twoje potrzeby i oczekiwania.</p>
+              <p className="text-gray-600">Wypełnij formularz kontaktowy poniżej lub zadzwoń do mnie bezpośrednio. Chętnie się z Tobą spotka i omówię Twoje potrzeby oraz oczekiwania podczas bezpłatnego spotkania zapoznawczego.</p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Czy mogę spróbować przed zapisaniem się na cały kurs?</h3>
-              <p className="text-gray-600">Oczywiście! Oferujemy jednorazowe warsztaty za 50-70 zł, podczas których możesz poznać atmosferę zajęć i sprawdzić, czy malarstwo to Twoja pasja.</p>
+              <p className="text-gray-600">Oczywiście! Organizuję jednorazowe warsztaty za 50-70 zł, podczas których możesz poznać atmosferę moich zajęć i sprawdzić, czy malarstwo to Twoja pasja.</p>
             </div>
           </div>
         </div>
@@ -717,7 +676,7 @@ const AmberFlowWebsite = () => {
             <div>
               <h4 className="text-lg font-semibold mb-4">Szybkie linki</h4>
               <div className="space-y-2">
-                <button onClick={() => scrollToSection('about')} className="block text-gray-400 hover:text-white transition-colors">O artystce</button>
+                <button onClick={() => scrollToSection('about')} className="block text-gray-400 hover:text-white transition-colors">O mnie</button>
                 <button onClick={() => scrollToSection('courses')} className="block text-gray-400 hover:text-white transition-colors">Kursy</button>
                 <button onClick={() => scrollToSection('gallery')} className="block text-gray-400 hover:text-white transition-colors">Galeria</button>
                 <button onClick={() => scrollToSection('contact')} className="block text-gray-400 hover:text-white transition-colors">Kontakt</button>
