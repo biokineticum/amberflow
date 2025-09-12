@@ -318,7 +318,7 @@ const AmberFlowWebsite = () => {
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-gray-600 mb-2">160-180 zł</div>
-                <p className="text-gray-600 mb-4">miesięcznie (4 zajęcia)</p>
+                <p className="text-gray-600 mb-4">miesięcznie (4 zajęcia po 2 godziny)</p>
                 <button 
                   onClick={() => scrollToSection('contact')}
                   className="w-full !bg-gray-600 !text-white py-3 rounded-lg shadow-md hover:!bg-gray-700 hover:shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-600 disabled:!bg-slate-200 disabled:!text-slate-700 disabled:cursor-not-allowed"
@@ -348,7 +348,7 @@ const AmberFlowWebsite = () => {
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-blue-600 mb-2">200-250 zł</div>
-                <p className="text-gray-600 mb-4">miesięcznie (4 zajęcia)</p>
+                <p className="text-gray-600 mb-4">miesięcznie (4 zajęcia po 2 godziny)</p>
                 <button 
                   onClick={() => scrollToSection('contact')}
                   className="w-full !bg-blue-600 !text-white py-3 rounded-lg shadow-md hover:!bg-blue-700 hover:shadow-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-600 disabled:!bg-slate-200 disabled:!text-slate-700 disabled:cursor-not-allowed"
