@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Mail, Phone, MapPin, Facebook, Instagram, Menu, X, Palette, Users, Clock, Award, PenTool } from 'lucide-react';
+import { Analytics } from "@vercel/analytics/react"
 
 const AmberFlowWebsite = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
